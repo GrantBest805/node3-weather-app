@@ -12,7 +12,7 @@ const forecast = (lat, lng, callback) => {
     } else {
       callback(
         undefined,
-        `${data.daily.data[0].summary} Temprature is currently ${data.currently.temperature} degress fahrenheit, with ${data.currently.precipProbability}% chance of rain.`
+        `${data.daily.data[0].summary} Temprature is currently ${data.currently.temperature} degress fahrenheit, with ${data.currently.precipProbability}% chance of rain. Today's High will be ${data.daily.data[0].temperatureHigh} with a Low of ${data.daily.data[0].temperatureLow}`
       );
     }
   });
