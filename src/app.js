@@ -6,7 +6,7 @@ const path = require("path");
 const geocode = require("../src/utils/geocode");
 const forecast = require("../src/utils/forecast");
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const app = express();
 
